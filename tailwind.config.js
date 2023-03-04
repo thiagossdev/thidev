@@ -1,17 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     backgroundImage: {
-      app: 'linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5)'
+      app: 'linear-gradient(to left, #dd6da4, #a1559e, #5e3a9d)',
     },
     gridTemplateRows: {
       layout: '2rem 1fr 1.5rem',
     },
     gridTemplateColumns: {
-      editor: '3.5rem 16rem 1fr'
+      editor: '3.5rem 16rem 1fr',
     },
     extend: {
       colors: {
@@ -21,12 +19,10 @@ module.exports = {
           700: '#13111b',
         },
         pink: {
-          500: '#fd78c3'
-        }
-      }
+          500: '#fd78c3',
+        },
+      },
     },
   },
-  plugins: [
-    require('tailwind-scrollbar')
-  ],
-}
+  plugins: [require('tailwind-scrollbar')],
+};
