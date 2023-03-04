@@ -20,6 +20,19 @@ export const metadata = {
   },
   description:
     "Developer at @RevGás. I'm a Developer! And for me, things are always evolving and this evolution is necessary.",
+  openGraph: {
+    url: 'https://thi.dev.br',
+    siteName: 'Thiago Sousa Santos',
+    images: [
+      {
+        url: 'https://thi.dev.br/og.png',
+        width: 1980,
+        height: 1080,
+      },
+    ],
+    locale: 'en-US',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
