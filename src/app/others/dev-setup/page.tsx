@@ -1,6 +1,7 @@
 import { CodePreview } from '@/components/CodePreview';
 import { getHighlighter } from '@/libs/shiki';
 
+export const revalidate = 1800 // revalidate every 30 minutes
 export const metadata = {
   title: 'Dev Setup',
 };

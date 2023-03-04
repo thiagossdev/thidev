@@ -1,5 +1,6 @@
 import { GistContent } from '@/components/GistContent';
 
+export const revalidate = 1800 // revalidate every 30 minutes
 export const metadata = {
   title: 'VSCode Settings',
 };

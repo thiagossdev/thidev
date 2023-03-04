@@ -2,6 +2,7 @@ import '../../styles/markdown.css';
 
 import { getReadmeData } from '@/libs/readme';
 
+export const revalidate = 1800 // revalidate every 30 minutes
 export const metadata = {
   title: 'README.md',
 };
