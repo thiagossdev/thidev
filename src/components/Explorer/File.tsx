@@ -1,9 +1,9 @@
 'use client';
 
-import { ReactNode } from 'react';
+import { useOpenFiles } from '@/hooks/useOpenFiles';
 import Link, { LinkProps } from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useOpenFiles } from '@/hooks/useOpenFiles';
+import { ReactNode } from 'react';
 
 interface FileProps extends LinkProps {
   children: ReactNode[];

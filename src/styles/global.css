@@ -7,6 +7,10 @@ code {
   counter-increment: step 0;
 }
 
+code .line {
+  padding-right: 1.5rem;
+}
+
 code .line::before {
   content: counter(step);
   counter-increment: step;
@@ -15,4 +19,8 @@ code .line::before {
   display: inline-block;
   text-align: right;
   color: #8f8ca8;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
 }

@@ -2,13 +2,9 @@
 
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import {
-  Github,
-  Instagram,
-  Linkedin,
-  Headphones,
-  Twitter,
-  User,
-  Twitch,
+  Github, Headphones, Instagram,
+  Linkedin, Twitch, Twitter,
+  User
 } from 'lucide-react';
 import { MenuButton } from './MenuButton';
 
@@ -49,14 +45,14 @@ export function SocialLinksMenuButton() {
   return (
     <div className="relative">
       <DropdownMenu.Root>
-        <DropdownMenu.Trigger aria-label="Redes sociais">
+        <DropdownMenu.Trigger aria-label="Redes sociais" className="w-full">
           <MenuButton icon={User} />
         </DropdownMenu.Trigger>
 
         <DropdownMenu.Portal>
           <DropdownMenu.Content
             side="right"
-            className="bg-[#2a273f] z-10 flex flex-col rounded-lg overflow-auto"
+            className="w-full max-h-[260px] bg-[#2a273f] z-50 flex flex-col rounded-lg overflow-y-auto scrollbar-none"
           >
             {socialLinks.map((socialItem) => {
               return (

@@ -1,5 +1,5 @@
 import shiki, { IShikiTheme } from 'shiki';
-import themeRaw from '../themes/omni.json';
+import themeRaw from '@/themes/omni.json';
 
 export async function getHighlighter() {
   const theme = themeRaw as IShikiTheme;

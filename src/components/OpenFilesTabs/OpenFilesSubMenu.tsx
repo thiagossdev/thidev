@@ -1,9 +1,9 @@
 'use client';
 import { useOpenFiles } from '@/hooks/useOpenFiles';
-import { CloseFileButton } from './CloseFileButton';
-import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { explorerFiles } from '../Explorer';
+import { usePathname } from 'next/navigation';
+import { explorerFiles } from '@/components/Explorer';
+import { CloseFileButton } from './CloseFileButton';
 
 export function OpenFilesSubMenu() {
   const { openFiles } = useOpenFiles();

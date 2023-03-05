@@ -1,7 +1,7 @@
 'use client';
-import Link from 'next/link';
-import { X } from 'lucide-react';
 import { useOpenFiles } from '@/hooks/useOpenFiles';
+import { X } from 'lucide-react';
+import Link from 'next/link';
 
 type CloseFileButtonProps = {
   isActive: boolean;

@@ -3,7 +3,7 @@
 import { useOpenFiles } from '@/hooks/useOpenFiles';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { explorerFiles } from '../Explorer';
+import { explorerFiles } from '@/components/Explorer';
 import { CloseFileButton } from './CloseFileButton';
 
 export function OpenFilesTabs() {
@@ -11,7 +11,7 @@ export function OpenFilesTabs() {
   const pathName = usePathname();
 
   return (
-    <div className="h-9 text-transparent text-sm flex flex-row bg-purple-700">
+    <div className="h-full max-h-9 text-transparent text-sm flex flex-row overflow-x-scroll scrollbar-none bg-purple-700">
       {openFiles?.map((openFile, index) => {
         const isActive = pathName === openFile;
 
